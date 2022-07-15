@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <title>خدمتك</title>
@@ -8,7 +8,484 @@
     <link rel="stylesheet" href="assets/css/all.min.css" />
   </head>
   <body>
-    <h1>let's start our new project!🚀</h1>
+    <header>
+      <div class="bg-blue-600">
+        <div class="container">
+          <div class="flex items-center justify-between text-white py-2">
+            <div class="bg-blue-600">
+              <select
+                name="lang"
+                id="lang"
+                class="appearance-none bg-transparent border border-white p-2 text-xs"
+              >
+                <option value="EN" class="text-black">EN</option>
+                <option value="AR" class="text-black">AR</option>
+              </select>
+            </div>
+            <div>
+              <select
+                name="login"
+                id="login"
+                class="bg-blue-600 border border-white p-2 flex items-center"
+              >
+                <option value="signin">تسجيل الدخول</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white">
+        <div class="container">
+          <div class="py-5 flex justify-between items-center flex-wrap">
+            <div class="flex items-center">
+              <div class="ml-3">
+                <h1 class="text-2xl font-bold text-slate-700">Dent-All</h1>
+                <span class="text-[10px] font-bold text-slate-400 -mt-1">
+                  Lorem ipsum dolor
+                </span>
+              </div>
+              <img src="assets/imgs/logo.png" alt="logo" class="w-16" />
+            </div>
+            <nav class="lg:flex lg:flex-1 lg:mr-5 font-medium hidden">
+              <ul class="flex">
+                <li>
+                  <a
+                    href="/"
+                    class="mx-2 py-4 px-3 hover:bg-slate-200 hover:underline underline-offset-2 rounded block"
+                    >الرئيسية</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/"
+                    class="mx-2 py-4 px-3 hover:bg-slate-200 hover:underline underline-offset-2 rounded block"
+                    >نصائح الاطباء</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/"
+                    class="mx-2 py-4 px-3 hover:bg-slate-200 hover:underline underline-offset-2 rounded block"
+                    >اطلب وصفتك</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/"
+                    class="mx-2 py-4 px-3 hover:bg-slate-200 hover:underline underline-offset-2 rounded block"
+                    >من نحن</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <div class="lg:hidden" id="toggle-menu">
+              <i class="fa-solid fa-bars || text-3xl"></i>
+            </div>
+            <div class="hidden lg:block">
+              <div class="flex items-center">
+                <div class="flex flex-col ml-3">
+                  <span
+                    class="text-[10px] font-bold text-slate-700 -mt-1 text-left"
+                    >تحدث مع الدعم الفني للتطبيق</span
+                  >
+                  <span class="font-bold text-lg">9388 383 4032+</span>
+                </div>
+                <div class="line-after relative">
+                  <img
+                    src="assets/imgs/headphone.png"
+                    alt="headphone"
+                    class="mix-blend-hard-light w-12"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section
+        class="nurse-image min-h-[400px] relative"
+        aria-label="hero image"
+      >
+        <div class="overlay"></div>
+      </section>
+
+      <section
+        class="lg:-mt-10 -mt-48 z-10 relative"
+        aria-label="search for doctor"
+      >
+        <div class="container">
+          <div class="bg-white rounded border border-blue-600">
+            <form action="/">
+              <div class="flex items-center flex-col lg:flex-row">
+                <div class="lg:p-1 p-2 flex flex-1 flex-col lg:flex-row w-full">
+                  <div class="relative flex-1 ml-1 lg:mb-0 mb-3">
+                    <span
+                      class="absolute text-gray-500 right-5 text-sm pointer-events-none top-[5px]"
+                      >اختار طبيب</span
+                    >
+                    <i
+                      class="fa-solid fa-location-dot || absolute left-7 top-[50%] translate-y-[-50%] text-blue-600 pointer-events-none"
+                    ></i>
+                    <!-- left: 25px;
+                      top: 50%;
+                      transform: translateY(-50%);
+                    -->
+                    <select
+                      name="subject"
+                      id="subject"
+                      class="lg:border-l-2 p-5 text-blue-600 font-bold text-lg border-2 border-gray-200 rounded pesudo-input-elements lg:border-none appearance-none w-full"
+                    >
+                      <option value="choose" selected class="text-black">
+                        اختار التخصص
+                      </option>
+                      <option value="choose" class="text-black">
+                        اختار التخصص
+                      </option>
+                    </select>
+                  </div>
+                  <div class="relative flex-1 ml-1 lg:mb-0 mb-3">
+                    <span
+                      class="absolute text-gray-500 right-5 text-sm pointer-events-none top-[5px]"
+                      >اختار طبيب</span
+                    >
+                    <i
+                      class="fa-solid fa-location-dot || absolute left-7 top-[50%] translate-y-[-50%] text-blue-600 pointer-events-none"
+                    ></i>
+                    <select
+                      name="subject"
+                      id="subject"
+                      class="lg:border-l-2 p-5 text-blue-600 font-bold text-lg border-2 border-gray-200 rounded pesudo-input-elements lg:border-none appearance-none w-full"
+                    >
+                      <option value="choose" selected class="text-black">
+                        اختار التخصص
+                      </option>
+                      <option value="choose" class="text-black">
+                        اختار التخصص
+                      </option>
+                    </select>
+                  </div>
+                  <div class="relative flex-1 lg:mb-0 mb-3">
+                    <span
+                      class="absolute text-gray-500 right-5 text-sm pointer-events-none top-[5px]"
+                      >اختار طبيب</span
+                    >
+                    <i
+                      class="fa-solid fa-location-dot || absolute left-7 top-[50%] translate-y-[-50%] text-blue-600 pointer-events-none"
+                    ></i>
+                    <select
+                      name="subject"
+                      id="subject"
+                      class="lg:border-l-2 p-5 text-blue-600 font-bold text-lg border-2 border-gray-200 rounded pesudo-input-elements lg:border-none appearance-none w-full"
+                    >
+                      <option value="choose" selected class="text-black">
+                        اختار التخصص
+                      </option>
+                      <option value="choose" class="text-black">
+                        اختار التخصص
+                      </option>
+                    </select>
+                  </div>
+                  <div class="flex flex-col flex-[2]">
+                    <input
+                      type="search"
+                      name="doctor-name"
+                      id="search-for-doctor"
+                      placeholder="ابحث باسم الطبيب"
+                      class="placeholder-blue-600 p-5 focus:outline-1 text-lg font-bold border-2 border-gray-200 rounded mb-3 lg:m-0 pesudo-input-elements outline-none lg:border-none appearance-none lg:ml-1"
+                    />
+                  </div>
+                </div>
+                <div class="w-full lg:w-auto">
+                  <button
+                    type="submit"
+                    class="lg:p-6 p-4 bg-blue-600 rounded text-white text-2xl block w-full"
+                  >
+                    <i
+                      class="fa-solid fa-magnifying-glass || text-yellow-500"
+                    ></i>
+                    <span> ابحث </span>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section aria-label="information about the app">
+        <div class="container py-16">
+          <div class="flex items-center">
+            <div class="flex-1 lg:block hidden">
+              <img
+                src="assets/imgs/doctor.png"
+                alt="doctor"
+                class="w-96 m-auto"
+              />
+            </div>
+            <div class="flex-1 lg:text-right text-center">
+              <h2 class="text-3xl font-bold">معلومات عن التطبيق</h2>
+              <p class="font-bold mt-5">
+                هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد
+                هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو
+                العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها
+                التطبيق.
+              </p>
+              <div
+                class="flex mt-10 lg:justify-start justify-center flex-wrap gap-4"
+              >
+                <div
+                  class="flex items-center justify-between border-2 border-slate-300 rounded-lg overflow-hidden w-[235px]"
+                >
+                  <div class="p-1">
+                    <p class="text-xl font-bold">مستشفيات الكويت</p>
+                    <span class="text-slate-400 text-xs"
+                      >132 مستشفيات متاحة الان</span
+                    >
+                  </div>
+                  <div class="w-16">
+                    <img src="assets/imgs/hospital.jpg" alt="hospital" />
+                  </div>
+                </div>
+                <div
+                  class="flex items-center justify-between border-2 border-slate-300 rounded-lg overflow-hidden w-[235px]"
+                >
+                  <div class="p-1">
+                    <p class="text-xl font-bold">عيادات الكويت</p>
+                    <span class="text-slate-400 text-xs"
+                      >132 مستشفيات متاحة الان</span
+                    >
+                  </div>
+                  <div class="w-16">
+                    <img src="assets/imgs/hospital.jpg" alt="hospital" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section aria-label="specialties">
+        <div class="container">
+          <div class="flex items-center justify-between mb-5">
+            <h2 class="text-2xl font-bold">تخصصات</h2>
+            <a href="/" class="text-blue-600 font-bold">تصفح المزيد...</a>
+          </div>
+        </div>
+        <div class="bg-gray-100 border border-blue-600">
+          <div class="container">
+            <div class="flex py-5 flex-wrap gap-6">
+              <div
+                class="p-4 border-2 border-slate-300 rounded-2xl shadow bg-white min-w-[200px] flex-1"
+              >
+                <img
+                  src="assets/imgs/eye.png"
+                  alt="eye"
+                  class="w-28 h-20 object-cover m-auto"
+                />
+                <p class="text-center font-bold">اسم التخصص</p>
+              </div>
+              <div
+                class="p-4 border-2 border-slate-300 rounded-2xl shadow bg-white min-w-[200px] flex-1"
+              >
+                <img
+                  src="assets/imgs/heart.png"
+                  alt="heart"
+                  class="w-28 h-20 object-cover m-auto"
+                />
+                <p class="text-center font-bold">اسم التخصص</p>
+              </div>
+              <div
+                class="p-4 border-2 border-slate-300 rounded-2xl shadow bg-white min-w-[200px] flex-1"
+              >
+                <img
+                  src="assets/imgs/kidney.png"
+                  alt="kidney"
+                  class="w-28 h-20 object-cover m-auto"
+                />
+                <p class="text-center font-bold">اسم التخصص</p>
+              </div>
+              <div
+                class="p-4 border-2 border-slate-300 rounded-2xl shadow bg-white min-w-[200px] flex-1"
+              >
+                <img
+                  src="assets/imgs/toothpng.png"
+                  alt="tooth"
+                  class="w-28 h-20 object-cover m-auto"
+                />
+                <p class="text-center font-bold">اسم التخصص</p>
+              </div>
+              <div
+                class="p-4 border-2 border-slate-300 rounded-2xl shadow bg-white min-w-[200px] flex-1"
+              >
+                <img
+                  src="assets/imgs/eye.png"
+                  alt="eye"
+                  class="w-28 h-20 object-cover m-auto"
+                />
+                <p class="text-center font-bold">اسم التخصص</p>
+              </div>
+              <div
+                class="p-4 border-2 border-slate-300 rounded-2xl shadow bg-white min-w-[200px] flex-1"
+              >
+                <img
+                  src="assets/imgs/eye.png"
+                  alt="eye"
+                  class="w-28 h-20 object-cover m-auto"
+                />
+                <p class="text-center font-bold">اسم التخصص</p>
+              </div>
+              <div
+                class="p-4 border-2 border-slate-300 rounded-2xl shadow bg-white min-w-[200px] flex-1"
+              >
+                <img
+                  src="assets/imgs/heart.png"
+                  alt="heart"
+                  class="w-28 h-20 object-cover m-auto"
+                />
+                <p class="text-center font-bold">اسم التخصص</p>
+              </div>
+              <div
+                class="p-4 border-2 border-slate-300 rounded-2xl shadow bg-white min-w-[200px] flex-1"
+              >
+                <img
+                  src="assets/imgs/kidney.png"
+                  alt="kidney"
+                  class="w-28 h-20 object-cover m-auto"
+                />
+                <p class="text-center font-bold">اسم التخصص</p>
+              </div>
+              <div
+                class="p-4 border-2 border-slate-300 rounded-2xl shadow bg-white min-w-[200px] flex-1"
+              >
+                <img
+                  src="assets/imgs/toothpng.png"
+                  alt="tooth"
+                  class="w-28 h-20 object-cover m-auto"
+                />
+                <p class="text-center font-bold">اسم التخصص</p>
+              </div>
+              <div
+                class="p-4 border-2 border-slate-300 rounded-2xl shadow bg-white min-w-[200px] flex-1"
+              >
+                <img
+                  src="assets/imgs/eye.png"
+                  alt="eye"
+                  class="w-28 h-20 object-cover m-auto"
+                />
+                <p class="text-center font-bold">اسم التخصص</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section aria-label="advices">
+        <div class="py-16">
+          <div class="container">
+            <h2 class="text-center text-3xl font-bold text-blue-600 mb-10">نصائح طبية يجب ان يتم اتباعها</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+              <a href="/" class="bg-gray-100">
+                <div>
+                  <img src="assets/imgs/sick3.jpg" alt="sick" class="w-full">
+                </div>
+                <div class="p-2 border border-blue-600">
+                  <p class="font-bold mb-2">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى</p>
+                  <div class="flex items-center">
+                    <img src="assets/imgs/man.svg" alt="doctor" class="w-10 rounded-full ml-3">
+                    <span class="font-bold text-blue-600">اسم الدكتور</span>
+                  </div>
+                </div>
+              </a>
+              <a href="/" class="bg-gray-100">
+                <div>
+                  <img src="assets/imgs/sick2.jpg" alt="sick" class="w-full">
+                </div>
+                <div class="p-2 border border-blue-600">
+                  <p class="font-bold mb-2">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى</p>
+                  <div class="flex items-center">
+                    <img src="assets/imgs/man.svg" alt="doctor" class="w-10 rounded-full ml-3">
+                    <span class="font-bold text-blue-600">اسم الدكتور</span>
+                  </div>
+                </div>
+              </a>
+              <a href=/ class="bg-gray-100">
+                <div>
+                  <img src="assets/imgs/sick3.jpg" alt="sick" class="w-full">
+                </div>
+                <div class="p-2 border border-blue-600">
+                  <p class="font-bold mb-2">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى</p>
+                  <div class="flex items-center">
+                    <img src="assets/imgs/man.svg" alt="doctor" class="w-10 rounded-full ml-3">
+                    <span class="font-bold text-blue-600">اسم الدكتور</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div class="bg-blue-600 text-white py-16">
+        <div class="container">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-14">
+          <div class="lg:mx-auto">
+            <h2 class="font-bold text-2xl mb-3">من نحن</h2>
+            <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، </p>
+          </div>
+          <div class="lg:mx-auto">
+            <h2 class="font-bold text-2xl mb-3">ابحث عن</h2>
+            <ul>
+              <li>التخصص</li>
+              <li>المنطقة</li>
+              <li>التامين</li>
+              <li>المستشفي</li>
+              <li>المركز</li>
+            </ul>
+          </div>
+          <div class="lg:mx-auto">
+            <h2 class="font-bold text-2xl mb-3"> تحتاج للمساعدة </h2>
+            <ul>
+              <li>خدمة الدعم</li>
+              <li>شروط الاستخدام</li>
+              <li>اتفاقية الخصوصية</li>
+              <li>المستشفي</li>
+              <li>اتفاية الاطباء</li>
+            </ul>
+          </div>
+          <div class="lg:mx-auto">
+            <div>
+              <img src="assets/imgs/playstore.png" alt="get the app from play store" class='w-48 mb-2'>
+              <img src="assets/imgs/playstore.png" alt="get the app from play store" class='w-48 mb-2'>
+            </div>
+            <span class='mr-4'>social media links here</span>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="bg-[#061e40] p-4">
+        <div class="container">
+          <div class="flex sm:justify-between justify-center flex-wrap text-white gap-5">
+            <span>جميع الحقوق محفوظة  لخدماتي.</span>
+            <span>تصميم 
+              <span class="text-yellow-400 font-bold">TopApp</span>
+              وبرمجة 
+              <span class="text-yellow-400 font-bold">احمد صفوت</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/3ce639d63b.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
-

@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "tailwindcss": "^3.1.4"
+  },
+  "name": "khedmetak-web-app",
+  "version": "1.0.0",
+  "main": "index.html",
+  "devDependencies": {},
+  "scripts": {
+    "dev": "tailwind -i assets/css/tailwind.css -o assets/css/all.min.css  -w --minify"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
