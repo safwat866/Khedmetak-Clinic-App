@@ -18,4 +18,14 @@ $(".menu-overlay").click(function () {
   $(".aside-menu").addClass("-translate-x-full");
   $(this).fadeOut();
   $(document.body).css("overflow", "visible");
-})
+});
+
+// fix body overflow in desktop
+$(window).resize(function () {
+  if ($(this).width() > 992) {
+    $(".menu-toggle").attr("aria-expanded", "false");
+    $(".aside-menu").addClass("-translate-x-full");
+    $(".menu-overlay").fadeOut();
+    $(document.body).css("overflow", "visible");
+  }
+});
