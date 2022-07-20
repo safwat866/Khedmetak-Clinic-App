@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>تفاصيل العيادة | خدمتك</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+  </head>
+  <body>
+    <header class="relative z-20">
+      <div class="bg-blue-600">
+        <div class="container">
+          <div class="flex items-center justify-between text-white py-2">
+            <div class="bg-blue-600">
+              <select name="lang" id="lang" class="appearance-none bg-transparent border border-white p-2 text-xs">
+                <option value="EN" class="text-black">EN</option>
+                <option value="AR" class="text-black">AR</option>
+              </select>
+            </div>
+            <div>
+              <select name="login" id="login" class="bg-blue-600 border border-white p-2 flex items-center">
+                <option value="signin">تسجيل الدخول</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white shadow">
+        <div class="container">
+          <div class="py-5 flex justify-between items-center flex-wrap">
+            <div class="flex items-center">
+              <div class="ml-3">
+                <h2 class="text-2xl font-bold text-slate-700">Dent-All</h2>
+                <span class="text-[10px] font-bold text-slate-400 -mt-1"> Lorem ipsum dolor </span>
+              </div>
+              <img src="assets/imgs/logo.png" alt="logo" class="w-16" />
+            </div>
+            <nav class="lg:flex lg:flex-1 lg:mr-5 font-medium hidden" aria-label="desktop navigation">
+              <ul class="flex">
+                <li>
+                  <a href="/" class="mx-2 py-4 px-3 hover:bg-slate-200 hover:underline underline-offset-2 rounded block">الرئيسية</a>
+                </li>
+                <li>
+                  <a href="/advices.html" class="mx-2 py-4 px-3 hover:bg-slate-200 hover:underline underline-offset-2 rounded block">نصائح الاطباء</a>
+                </li>
+                <li>
+                  <a href="/order-recipe.html" class="mx-2 py-4 px-3 hover:bg-slate-200 hover:underline underline-offset-2 rounded block">اطلب وصفتك</a>
+                </li>
+                <li>
+                  <a href="/clinic-details.html" class="mx-2 py-4 px-3 hover:bg-slate-200 hover:underline underline-offset-2 rounded block">افضل المستشفيات</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="lg:hidden" id="toggle-menu">
+              <button class="menu-toggle py-3" aria-expanded="false">
+                <i class="fa-solid fa-bars || text-3xl"></i>
+              </button>
+            </div>
+            <aside class="fixed left-0 top-0 bg-white shadow-xl w-80 h-screen z-[60] p-5 -translate-x-full transition-transform duration-300 || aside-menu">
+              <div class="flex items-center justify-end">
+                <div class="flex flex-col ml-3">
+                  <span class="text-[10px] font-bold text-slate-700 -mt-1 text-left">تحدث مع الدعم الفني للتطبيق</span>
+                  <span class="font-bold text-lg">9388 383 4032+</span>
+                </div>
+                <div class="line-after relative">
+                  <img src="assets/imgs/headphone.png" alt="headphone" class="mix-blend-hard-light w-12" />
+                </div>
+              </div>
+              <div class="mt-7 mx-2">
+                <button class="bg-blue-500 text-white py-4 px-3 rounded block w-full hover:bg-blue-700 || aside-closer">
+                  <i class="fa-solid fa-arrow-right-from-bracket fa-xl || ml-2"></i>
+                  رجوع
+                </button>
+              </div>
+              <nav aria-label="mobile navigation">
+                <ul class="mt-5">
+                  <li>
+                    <a href="/" class="mx-2 py-4 px-3 hover:bg-slate-200 hover:underline underline-offset-2 rounded block">الرئيسية</a>
+                  </li>
+                  <li>
+                    <a href="/advices.html" class="mx-2 py-4 px-3 hover:bg-slate-200 hover:underline underline-offset-2 rounded block">نصائح الاطباء</a>
+                  </li>
+                  <li>
+                    <a href="/order-recipe.html" class="mx-2 py-4 px-3 hover:bg-slate-200 hover:underline underline-offset-2 rounded block">اطلب وصفتك</a>
+                  </li>
+                  <li>
+                    <a href="/clinic-details.html" class="mx-2 py-4 px-3 hover:bg-slate-200 hover:underline underline-offset-2 rounded block">افضل المستشفيات</a>
+                  </li>
+                </ul>
+              </nav>
+            </aside>
+            <div class="overlay menu-overlay"></div>
+            <div class="hidden lg:block">
+              <div class="flex items-center">
+                <div class="flex flex-col ml-3">
+                  <span class="text-[10px] font-bold text-slate-700 -mt-1 text-left">تحدث مع الدعم الفني للتطبيق</span>
+                  <span class="font-bold text-lg">9388 383 4032+</span>
+                </div>
+                <div class="line-after relative">
+                  <img src="assets/imgs/headphone.png" alt="headphone" class="mix-blend-hard-light w-12" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section aria-label="clinic details">
+        <div class="container py-5">
+          <div class="flex items-start flex-col lg:flex-row">
+            <div class="p-5 shadow-xl border border-blue-700 rounded mt-5 lg:min-w-[380px] w-full lg:w-auto">
+              <div class="border-b-[1px] text-center p-3">
+                <img src="assets/imgs/doctor-user.jpg" alt="doctor" class="w-36 h-36 object-cover bg-center rounded-full mx-auto" />
+                <h2 class="text-2xl font-bold my-2">مركز اسنان تور</h2>
+              </div>
+              <div>
+                <ul class="my-4">
+                  <li>
+                    <i class="fa-solid fa-stethoscope || text-blue-700"></i>
+                    الدكتور:فاروق عمر الحورارت
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-heart || text-blue-700"></i>
+                    قلب واوعية دموية
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-sack-dollar || text-blue-700"></i>
+                    رسوم الكشف : 60 دينار
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-clock || text-blue-700"></i>
+                    9:30 صباحا - 8:00 مساء
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-location-dot || text-blue-700"></i>
+                    الفحيحيل محافظة الاحمدي الكويت
+                  </li>
+                </ul>
+              </div>
+              <div class="bg-blue-700 text-white p-2 rounded-lg">
+                <div class="flex items-center justify-between">
+                  <span class="flex items-center">
+                    <img src="assets/imgs/headphone.png" alt="clinic number" class="mix-blend-darken w-12" />
+                    29329032
+                  </span>
+                  <span>
+                    <i class="fa-brands fa-whatsapp || text-green-600 font-bold"></i>
+                    تواصل واتساب
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="p-5 lg:mr-3 flex-1">
+              <div class="border-b-[1px]">
+                <ul class="flex items-center">
+                  <li>
+                    <a href="/clinic-details.html" class="lg:p-4 p-2 lg:ml-3 font-bold block hover:opacity-100 md:text-xl text-sm"> حجز موعد</a>
+                  </li>
+                  <li>
+                    <a href="/home-visit.html" class="lg:p-4 p-2 lg:ml-3 font-bold opacity-50 block hover:opacity-100 md:text-xl text-sm"> زيارة منزلية</a>
+                  </li>
+                  <li>
+                    <a href="/image-gallery.html" class="lg:p-4 p-2 lg:ml-3 font-bold opacity-50 block hover:opacity-100 md:text-xl text-sm">معرض الصور</a>
+                  </li>
+                  <li>
+                    <a href="/doctor-info.html" class="lg:p-4 p-2 lg:ml-3 font-bold opacity-50 block hover:opacity-100 md:text-xl text-sm"> معلومات عن الدكتور</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="py-2">
+                <div class="my-5">
+                  <input type="text" placeholder="اسم المريض" class="border rounded p-3 w-full" name="patint name" />
+                </div>
+                <div class="flex justify-between items-center py-5">
+                  <div class="flex">
+                    <label for="type" class="p-2 bg-blue-700 rounded-r-lg text-white">النوع</label>
+                    <select name="type" id="type" class="bg-yellow-400 py-1 px-3 rounded-l-lg lg:min-w-[150px]">
+                      <option value="male">ذكر</option>
+                    </select>
+                  </div>
+                  <div class="flex">
+                    <label for="age" class="p-2 bg-blue-700 rounded-r-lg text-white">السن</label>
+                    <input type="number" value="1" min="1" max="100" class="bg-yellow-400 py-1 px-3 rounded-l-lg lg:min-w-[150px] max-w-[150px]" id="age" />
+                  </div>
+                </div>
+                <div class="flex flex-col mb-10">
+                  <div class="p-3 border border-blue-500 rounded-lg bg-blue-100 text-center font-bold text-xl my-5">اختر تاريخ الزيارة</div>
+                  <div class="data-grid">
+                    <div class="flex-1 bg-slate-100 border border-blue-300 p-2 rounded-lg gg">الاثنين 20-9</div>
+                    <div class="flex-1 bg-slate-100 border border-blue-300 p-2 rounded-lg gg">الاثنين 20-9</div>
+                    <div class="flex-1 bg-slate-100 border border-blue-300 p-2 rounded-lg gg">الاثنين 20-9</div>
+                    <div class="flex-1 bg-slate-100 border border-blue-300 p-2 rounded-lg gg">الاثنين 20-9</div>
+                    <div class="flex-1 bg-slate-100 border border-blue-300 p-2 rounded-lg gg">الاثنين 20-9</div>
+                    <div class="flex-1 bg-slate-100 border border-blue-300 p-2 rounded-lg gg">الاثنين 20-9</div>
+                    <div class="flex-1 bg-slate-100 border border-blue-300 p-2 rounded-lg gg">الاثنين 20-9</div>
+                    <div class="flex-1 bg-slate-100 border border-blue-300 p-2 rounded-lg gg">الاثنين 20-9</div>
+                    <div class="flex-1 bg-slate-100 border border-blue-300 p-2 rounded-lg gg">الاثنين 20-9</div>
+                    <div class="flex-1 bg-slate-100 border border-blue-300 p-2 rounded-lg gg">الاثنين 20-9</div>
+                    <div class="flex-1 bg-slate-100 border border-blue-300 p-2 rounded-lg gg">الاثنين 20-9</div>
+                    <div class="flex-1 bg-slate-100 border border-blue-300 p-2 rounded-lg gg">الاثنين 20-9</div>
+                    <div class="flex-1 bg-slate-100 border border-blue-300 p-2 rounded-lg gg">الاثنين 20-9</div>
+                    <div class="flex-1 bg-slate-100 border border-blue-300 p-2 rounded-lg gg">الاثنين 20-9</div>
+                  </div>
+                </div>
+                <div class="flex flex-col mb-10">
+                  <div class="p-3 border border-blue-500 rounded-lg bg-blue-100 text-center font-bold text-xl my-5">اختر تاريخ الزيارة</div>
+                  <div class="data-grid">
+                    <div class="flex-1 bg-slate-100 border border-blue-300 p-2 rounded-lg gg">الاثنين 20-9</div>
+                    <div class="flex-1 bg-slate-100 border border-blue-300 p-2 rounded-lg gg">الاثنين 20-9</div>
+                    <div class="flex-1 bg-slate-100 border border-blue-300 p-2 rounded-lg gg">الاثنين 20-9</div>
+                    <div class="flex-1 bg-slate-100 border border-blue-300 p-2 rounded-lg gg">الاثنين 20-9</div>
+                    <div class="flex-1 bg-slate-100 border border-blue-300 p-2 rounded-lg gg">الاثنين 20-9</div>
+                    <div class="flex-1 bg-slate-100 border border-blue-300 p-2 rounded-lg gg">الاثنين 20-9</div>
+                    <div class="flex-1 bg-slate-100 border border-blue-300 p-2 rounded-lg gg">الاثنين 20-9</div>
+                    <div class="flex-1 bg-slate-100 border border-blue-300 p-2 rounded-lg gg">الاثنين 20-9</div>
+                    <div class="flex-1 bg-slate-100 border border-blue-300 p-2 rounded-lg gg">الاثنين 20-9</div>
+                    <div class="flex-1 bg-slate-100 border border-blue-300 p-2 rounded-lg gg">الاثنين 20-9</div>
+                    <div class="flex-1 bg-slate-100 border border-blue-300 p-2 rounded-lg gg">الاثنين 20-9</div>
+                    <div class="flex-1 bg-slate-100 border border-blue-300 p-2 rounded-lg gg">الاثنين 20-9</div>
+                    <div class="flex-1 bg-slate-100 border border-blue-300 p-2 rounded-lg gg">الاثنين 20-9</div>
+                    <div class="flex-1 bg-slate-100 border border-blue-300 p-2 rounded-lg gg">الاثنين 20-9</div>
+                  </div>
+                </div>
+                <div>
+                  <a href="/" class="bg-yellow-400 border-slate-500 border-2 py-3 px-2 text-2xl w-full block text-center rounded-lg">حجز موعد</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="bg-blue-600 text-white py-16">
+        <div class="container">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-14">
+            <div class="lg:mx-auto">
+              <h2 class="font-bold text-2xl mb-3">افضل المستشفيات</h2>
+              <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى،</p>
+            </div>
+            <div class="lg:mx-auto">
+              <h2 class="font-bold text-2xl mb-3">ابحث عن</h2>
+              <ul class="mb-4">
+                <li>التخصص</li>
+                <li>المنطقة</li>
+                <li>التامين</li>
+                <li>المستشفي</li>
+                <li>المركز</li>
+              </ul>
+            </div>
+            <div class="lg:mx-auto">
+              <h2 class="font-bold text-2xl mb-3">تحتاج للمساعدة</h2>
+              <ul class="mb-4">
+                <li>خدمة الدعم</li>
+                <li>شروط الاستخدام</li>
+                <li>اتفاقية الخصوصية</li>
+                <li>المستشفي</li>
+                <li>اتفاية الاطباء</li>
+              </ul>
+            </div>
+            <div class="lg:mx-auto">
+              <div>
+                <img src="assets/imgs/playstore.png" alt="get the app from play store" class="w-48 mb-4" />
+                <img src="assets/imgs/playstore.png" alt="get the app from play store" class="w-48 mb-4" />
+              </div>
+              <span class="mr-4">social media links here</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-[#061e40] p-4">
+        <div class="container">
+          <div class="flex sm:justify-between justify-center flex-wrap text-white gap-5">
+            <span>جميع الحقوق محفوظة لخدماتي.</span>
+            <span
+              >تصميم
+              <span class="text-yellow-400 font-bold">TopApp</span>
+              وبرمجة
+              <span class="text-yellow-400 font-bold">احمد صفوت</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/3ce639d63b.js" crossorigin="anonymous"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/all.js"></script>
+  </body>
+</html>
