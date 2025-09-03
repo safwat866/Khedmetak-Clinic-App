@@ -1,177 +1,23 @@
-# Khedmetak web app
+# 🏥 Hospital Website
 
-khedmetak app is a clinic web app made with html tailwindcss jquery
+A simple and responsive hospital website built using **HTML**, **Tailwind CSS**, and **JavaScript/jQuery**. The website consists of 10 fully responsive pages and provides a clean, modern user interface for showcasing hospital services and information.
 
-# basic layout
+---
 
-## head of the page
+## 🚀 Features
 
-    <meta charset="UTF-8" />
-    <title>خدمتك</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/css/all.min.css" />
+- 🔹 Responsive Design (Mobile / Tablet / Desktop)
+- 🔹 Tailwind CSS for fast and flexible styling
+- 🔹 Smooth animations and interactivity with jQuery
+- 🔹 Clean and accessible layout
+- 🔹 Appointment form with validation
+- 🔹 Scroll-to-top, navbar toggle, and other JS features
 
-### don't forget to make the page arabic
+---
 
-## header
+## 🛠️ Technologies Used
 
-  <header class="relative z-20">
-    <div class="bg-blue-600">
-      <div class="container">
-        <div class="flex items-center justify-between text-white py-2">
-          <div class="bg-blue-600">
-            <select name="lang" id="lang" class="appearance-none bg-transparent border border-white p-2 text-xs">
-              <option value="EN" class="text-black">EN</option>
-              <option value="AR" class="text-black">AR</option>
-            </select>
-          </div>
-          <div>
-            <select name="login" id="login" class="bg-blue-600 border border-white p-2 flex items-center">
-              <option value="signin">تسجيل الدخول</option>
-            </select>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="bg-white shadow">
-      <div class="container">
-        <div class="py-5 flex justify-between items-center flex-wrap">
-          <div class="flex items-center">
-            <div class="ml-3">
-              <h2 class="text-2xl font-bold text-slate-700">Dent-All</h2>
-              <span class="text-[10px] font-bold text-slate-400 -mt-1"> Lorem ipsum dolor </span>
-            </div>
-            <img src="assets/imgs/logo.png" alt="logo" class="w-16" />
-          </div>
-          <nav class="lg:flex lg:flex-1 lg:mr-5 font-medium hidden" aria-label="desktop navigation">
-            <ul class="flex">
-              <li>
-                <a href="/" class="mx-2 py-4 px-3 hover:bg-slate-200 hover:underline underline-offset-2 rounded block">الرئيسية</a>
-              </li>
-              <li>
-                <a href="/advices.html" class="mx-2 py-4 px-3 hover:bg-slate-200 hover:underline underline-offset-2 rounded block">نصائح الاطباء</a>
-              </li>
-              <li>
-                <a href="/order-recipe.html" class="mx-2 py-4 px-3 hover:bg-slate-200 hover:underline underline-offset-2 rounded block">اطلب وصفتك</a>
-              </li>
-              <li>
-                <a href="/clinic-details.html" class="mx-2 py-4 px-3 hover:bg-slate-200 hover:underline underline-offset-2 rounded block">افضل المستشفيات</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="lg:hidden" id="toggle-menu">
-            <button class="menu-toggle py-3" aria-expanded="false">
-              <i class="fa-solid fa-bars || text-3xl"></i>
-            </button>
-          </div>
-          <aside class="fixed left-0 top-0 bg-white shadow-xl w-80 h-screen z-[60] p-5 -translate-x-full transition-transform duration-300 || aside-menu">
-            <div class="flex items-center justify-end">
-              <div class="flex flex-col ml-3">
-                <span class="text-[10px] font-bold text-slate-700 -mt-1 text-left">تحدث مع الدعم الفني للتطبيق</span>
-                <span class="font-bold text-lg">9388 383 4032+</span>
-              </div>
-              <div class="line-after relative">
-                <img src="assets/imgs/headphone.png" alt="headphone" class="mix-blend-hard-light w-12" />
-              </div>
-            </div>
-            <div class="mt-7 mx-2">
-              <button class="bg-blue-500 text-white py-4 px-3 rounded block w-full hover:bg-blue-700 || aside-closer">
-                <i class="fa-solid fa-arrow-right-from-bracket fa-xl || ml-2"></i>
-                رجوع
-              </button>
-            </div>
-            <nav aria-label="mobile navigation">
-              <ul class="mt-5">
-                <li>
-                  <a href="/" class="mx-2 py-4 px-3 hover:bg-slate-200 hover:underline underline-offset-2 rounded block">الرئيسية</a>
-                </li>
-                <li>
-                  <a href="/advices.html" class="mx-2 py-4 px-3 hover:bg-slate-200 hover:underline underline-offset-2 rounded block">نصائح الاطباء</a>
-                </li>
-                <li>
-                  <a href="/order-recipe.html" class="mx-2 py-4 px-3 hover:bg-slate-200 hover:underline underline-offset-2 rounded block">اطلب وصفتك</a>
-                </li>
-                <li>
-                  <a href="/clinic-details.html" class="mx-2 py-4 px-3 hover:bg-slate-200 hover:underline underline-offset-2 rounded block">افضل المستشفيات</a>
-                </li>
-              </ul>
-            </nav>
-          </aside>
-          <div class="overlay menu-overlay"></div>
-          <div class="hidden lg:block">
-            <div class="flex items-center">
-              <div class="flex flex-col ml-3">
-                <span class="text-[10px] font-bold text-slate-700 -mt-1 text-left">تحدث مع الدعم الفني للتطبيق</span>
-                <span class="font-bold text-lg">9388 383 4032+</span>
-              </div>
-              <div class="line-after relative">
-                <img src="assets/imgs/headphone.png" alt="headphone" class="mix-blend-hard-light w-12" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-
-## footer
-
-  <footer>
-    <div class="bg-blue-600 text-white py-16">
-      <div class="container">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-14">
-          <div class="lg:mx-auto">
-            <h2 class="font-bold text-2xl mb-3">افضل المستشفيات</h2>
-            <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى،</p>
-          </div>
-          <div class="lg:mx-auto">
-            <h2 class="font-bold text-2xl mb-3">ابحث عن</h2>
-            <ul class="mb-4">
-              <li>التخصص</li>
-              <li>المنطقة</li>
-              <li>التامين</li>
-              <li>المستشفي</li>
-              <li>المركز</li>
-            </ul>
-          </div>
-          <div class="lg:mx-auto">
-            <h2 class="font-bold text-2xl mb-3">تحتاج للمساعدة</h2>
-            <ul class="mb-4">
-              <li>خدمة الدعم</li>
-              <li>شروط الاستخدام</li>
-              <li>اتفاقية الخصوصية</li>
-              <li>المستشفي</li>
-              <li>اتفاية الاطباء</li>
-            </ul>
-          </div>
-          <div class="lg:mx-auto">
-            <div>
-              <img src="assets/imgs/playstore.png" alt="get the app from play store" class="w-48 mb-4" />
-              <img src="assets/imgs/playstore.png" alt="get the app from play store" class="w-48 mb-4" />
-            </div>
-            <span class="mr-4">social media links here</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="bg-[#061e40] p-4">
-      <div class="container">
-        <div class="flex sm:justify-between justify-center flex-wrap text-white gap-5">
-          <span>جميع الحقوق محفوظة لخدماتي.</span>
-          <span
-            >تصميم
-            <span class="text-yellow-400 font-bold">TopApp</span>
-            وبرمجة
-            <span class="text-yellow-400 font-bold">احمد صفوت</span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-## scripts
-
-    <script src="https://kit.fontawesome.com/3ce639d63b.js" crossorigin="anonymous"></script>
-    <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/all.js"></script>
+- **HTML5**
+- **Tailwind CSS**
+- **JavaScript**
+- **jQuery**
